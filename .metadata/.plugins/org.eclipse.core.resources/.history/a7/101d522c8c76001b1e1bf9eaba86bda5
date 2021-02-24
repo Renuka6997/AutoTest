@@ -42,7 +42,7 @@ public class AppStep {
 		a.click();
 		WebElement em = driver
 				.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/div[1]/form/div/div[2]/input"));
-		em.sendKeys("audi@gmail.com");
+		em.sendKeys("po@gmail.com");
 		WebElement acc = driver
 				.findElement(By.xpath("/html/body/div/div[2]/div/div[3]/div/div/div[1]/form/div/div[3]/button/span"));
 		acc.click();
