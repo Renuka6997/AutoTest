@@ -1,0 +1,21 @@
+package com.app.base;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class AppBase {
+
+	WebDriver driver;
+
+	public void openBrowser() {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\rebammid\\eclipse-workspace\\Application\\Driver\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.get("http://automationpractice.com/index.php");
+		driver.manage().deleteAllCookies();
+		driver.manage().window().maximize();
+	}
+}

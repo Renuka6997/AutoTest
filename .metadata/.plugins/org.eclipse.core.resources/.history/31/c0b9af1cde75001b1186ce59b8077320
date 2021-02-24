@@ -1,0 +1,14 @@
+package com.app.runner;
+
+
+import cucumber.api.CucumberOptions;
+
+
+@CucumberOptions(features = "C:\\Users\\rebammid\\eclipse-workspace\\Application\\src\\main\\java\\com\\app\\feature\\App.feature",
+                 glue = "C:\\Users\\rebammid\\eclipse-workspace\\Application\\src\\main\\java\\com\\app\\step\\AppStep.java",
+                 monochrome = true,
+                 plugin = {"pretty", "html:target/cucumber"},
+                 dryRun = false)
+public class AppRunner {
+
+}
